@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Safe Report</title>
+    <link rel="stylesheet" href="admin-styles.css">
+</head>
+<body>
+    <div class="admin-container">
+        <header>
+            <h1>🛡️ Admin Dashboard</h1>
+            <button id="logoutBtn" class="logout-btn">Logout</button>
+        </header>
+
+        <div id="loginSection" class="login-section">
+            <div class="login-box">
+                <h2>Admin Login</h2>
+                <input type="email" id="adminEmail" placeholder="Admin Email">
+                <input type="password" id="adminPassword" placeholder="Password">
+                <button id="loginBtn">Login</button>
+                <p id="loginError" class="error-message"></p>
+            </div>
+        </div>
+
+        <div id="dashboardSection" class="dashboard-section" style="display: none;">
+            <div class="stats">
+                <div class="stat-card">
+                    <h3>Total Reports</h3>
+                    <p id="totalReports" class="stat-number">0</p>
+                </div>
+                <div class="stat-card">
+                    <h3>New Reports</h3>
+                    <p id="newReports" class="stat-number">0</p>
+                </div>
+                <div class="stat-card">
+                    <h3>In Progress</h3>
+                    <p id="inProgressReports" class="stat-number">0</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Resolved</h3>
+                    <p id="resolvedReports" class="stat-number">0</p>
+                </div>
+            </div>
+
+            <div class="filters">
+                <select id="statusFilter">
+                    <option value="all">All Status</option>
+                    <option value="new">New</option>
+                    <option value="in-progress">In Progress</option>
+                    <option value="resolved">Resolved</option>
+                </select>
+                <select id="typeFilter">
+                    <option value="all">All Types</option>
+                    <option value="verbal">Verbal</option>
+                    <option value="physical">Physical</option>
+                    <option value="online">Online</option>
+                    <option value="workplace">Workplace</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div id="reportsList" class="reports-list">
+                <p class="loading">Loading reports...</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="reportModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="reportDetails"></div>
+        </div>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>

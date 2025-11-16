@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    width: 100%;
+    padding: 40px;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.button-group {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+button {
+    background: #667eea;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    flex: 1;
+    min-width: 120px;
+}
+
+button:hover {
+    background: #5568d3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+button.secondary {
+    background: #e0e7ff;
+    color: #667eea;
+}
+
+button.secondary:hover {
+    background: #c7d2fe;
+}
+
+.type-button {
+    background: #f3f4f6;
+    color: #333;
+    padding: 15px 20px;
+    flex: 0 1 calc(50% - 8px);
+}
+
+.type-button:hover {
+    background: #e5e7eb;
+}
+
+.type-button.selected {
+    background: #667eea;
+    color: white;
+}
+
+textarea {
+    width: 100%;
+    min-height: 150px;
+    padding: 15px;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: inherit;
+    resize: vertical;
+    margin: 15px 0;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+input[type="date"],
+input[type="email"],
+input[type="tel"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+input:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+.report-id {
+    background: #f0fdf4;
+    border: 2px solid #86efac;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.report-id h2 {
+    color: #16a34a;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.report-id-code {
+    font-size: 20px;
+    font-weight: bold;
+    color: #15803d;
+    font-family: 'Courier New', monospace;
+}
+
+.resources {
+    background: #fef2f2;
+    border: 2px solid #fca5a5;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.resources h3 {
+    color: #dc2626;
+    margin-bottom: 15px;
+}
+
+.resources ul {
+    list-style: none;
+    padding: 0;
+}
+
+.resources li {
+    padding: 8px 0;
+    color: #991b1b;
+}
+
+.resources a {
+    color: #dc2626;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.resources a:hover {
+    text-decoration: underline;
+}
+
+.skip-link {
+    color: #667eea;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.skip-link:hover {
+    text-decoration: underline;
+}
+
+.optional-label {
+    color: #9ca3af;
+    font-size: 14px;
+}
+
+.step-indicator {
+    color: #9ca3af;
+    font-size: 14px;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,20 @@
+{
+  "name": "safe-report",
+  "version": "1.0.0",
+  "description": "Anonymous harassment reporting website with Firebase",
+  "main": "index.html",
+  "scripts": {
+    "set-admin": "node set-admin.js"
+  },
+  "keywords": [
+    "harassment",
+    "reporting",
+    "firebase",
+    "anonymous"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "firebase-admin": "^12.0.0"
+  }
+}
