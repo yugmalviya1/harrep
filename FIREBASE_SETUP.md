@@ -213,7 +213,9 @@ If you can't use Node.js, you can use Firebase Extensions:
 
 ### Test Admin Dashboard:
 1. Open `admin.html` in your browser
-2. Login with your admin email and password (from Step 6)
+2. Login with credentials:
+   - Email: `testuser@123`
+   - Password: `user@123`
 3. You should see your test report!
 4. Click on it to view details
 5. Try changing the status

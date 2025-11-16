@@ -75,7 +75,9 @@ node set-admin.js
 
 ### 7. Test!
 - Open `index.html` → Submit a report
-- Open `admin.html` → Login and view reports
+- Open `admin.html` → Login with:
+  - Email: `testuser@123`
+  - Password: `user@123`
 
 ## 📝 Files to Edit
 
